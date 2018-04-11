@@ -1,0 +1,23 @@
+{
+  "name": "react-native-bambuser-player",
+  "version": "0.0.8",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "bambuser",
+    "player",
+    "iris",
+    "iris-platform",
+    "live",
+    "video"
+  ],
+  "author": "Peter Löfquist <pete@bambuser.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
