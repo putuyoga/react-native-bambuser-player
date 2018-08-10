@@ -6,7 +6,7 @@
     </a>
   </p>
   <br /><br />
-  <h1>React Native component for Iris player SDK</h1>
+  <h1>React Native component for Bambuser player SDK</h1>
 </div>
 
 
@@ -14,10 +14,10 @@
 
 1. Add `react-native-bambuser-player` to your React Native project.  
     `$ npm install react-native-bambuser-player --save`
-2. Download iOS & Android SDKs from https://dashboard.irisplatform.io/developer
-3. Android only: Head over to https://irisplatform.io/docs/playback/android-player/ and follow the sections _Add the Iris SDK for Android_ and _Add required Android app permissions_ for the Android project within your React Native project.  
+2. Download iOS & Android SDKs from https://dashboard.bambuser.com/developer
+3. Android only: Head over to https://bambuser.com/docs/playback/android-player/ and follow the sections _Add the Bambuser SDK for Android_ and _Add required Android app permissions_ for the Android project within your React Native project.  
     **Important note:** when adding the libbambuser subproject, make sure you name it: **libbambuser**, the React Native component will look for this subproject when building your React Native app.
-4. iOS only: Go to https://irisplatform.io/docs/playback/ios-player/ and follow the sections _Add dependencies_ and _Add the playback SDK_ for the iOS project within your React Native project.
+4. iOS only: Go to https://bambuser.com/docs/playback/ios-player/ and follow the sections _Add dependencies_ and _Add the playback SDK_ for the iOS project within your React Native project.
 
 ### To automatically link this React Native module to your Xcode/Android projects run the following command:
 
@@ -63,7 +63,7 @@ For Android:
 
 ## Usage
 
-In order to use this React Native component and our SDKs you'll need to generate an `applicationId` over at https://dashboard.irisplatform.io/developer.
+In order to use this React Native component and our SDKs you'll need to generate an `applicationId` over at https://dashboard.bambuser.com/developer.
 
 ```javascript
 import RNBambuserPlayer from 'react-native-bambuser-player';
@@ -75,10 +75,10 @@ import RNBambuserPlayer from 'react-native-bambuser-player';
 ### Props
 ```javascript
 applicationId: String
-// This applicationId should be fetched from your backend, rather than being hardcoded within your Reacty Native app. Read more here https://irisplatform.io/docs/key-concepts/application-id/
+// This applicationId should be fetched from your backend, rather than being hardcoded within your Reacty Native app. Read more here https://bambuser.com/docs/key-concepts/application-id/
 
 resourceUri: String
-// The uri to the resource you want this player to play. Read more here https://irisplatform.io/docs/key-concepts/resource-uri/. In order to play a new resourceUri after the component have been mounted the function .stop() have to be called on this player object.
+// The uri to the resource you want this player to play. Read more here https://bambuser.com/docs/key-concepts/resource-uri/. In order to play a new resourceUri after the component have been mounted the function .stop() have to be called on this player object.
 
 timeShiftMode: Boolean
 // Enable this if you want be able to seek in a live broadcast.
@@ -148,9 +148,8 @@ this.myPlayerRef.seekTo(position);
 // Call this to seek to desired position in the video.
 ```
 
-
 ## More information
 
-* [Iris Platform Docs](https://irisplatform.io/docs)
+* [Bambuser Docs](https://bambuser.com/docs)
 
 * [Bambuser AB](https://bambuser.com)
