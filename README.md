@@ -13,7 +13,7 @@
 ## Installation
 
 1. Add `react-native-bambuser-player` to your React Native project.  
-    `$ npm install react-native-bambuser-player --save`
+    `$ yarn add react-native-bambuser-player --save`
 2. Download iOS & Android SDKs from https://dashboard.bambuser.com/developer
 3. Android only: Head over to https://bambuser.com/docs/playback/android-player/ and follow the sections [Add the Bambuser SDK for Android](https://bambuser.com/docs/playback/android-player/#add-the-productname-sdk-for-android) and [Add required Android app permissions](https://bambuser.com/docs/playback/android-player/#add-required-android-app-permissions) for the Android project within your React Native project.
     **Important note:** when adding the libbambuser subproject, make sure you name it: **libbambuser**, the React Native component will look for this subproject when building your React Native app.
