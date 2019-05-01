@@ -159,13 +159,18 @@
 }
 
 -(void)setPlay:(BOOL)_play {
-  if (bambuserPlayer.status != kBambuserPlayerStateStopped) {
+  if (bambuserPlayer.status == kBambuserPlayerStateStopped) {
+    bambuserPlayer = [[BambuserPlayer alloc] init];
+    bambuserPlayer.delegate = self;
+    [self addSubview:bambuserPlayer];
+    [self loadAndPlay];
+  } else if (bambuserPlayer.status == kBambuserPlayerStateIdle) {
+    [self loadAndPlay];
+  } else {
     if (round([bambuserPlayer playbackPosition]) >= duration) {
       [bambuserPlayer seekTo:0];
     }
     [bambuserPlayer playVideo];
-  } else {
-    [self loadAndPlay];
   }
 }
 
@@ -178,7 +183,6 @@
 }
 
 -(void)loadAndPlay {
-  [bambuserPlayer stopVideo];
   if (self.onLoading) {
     self.onLoading(nil);
   }
