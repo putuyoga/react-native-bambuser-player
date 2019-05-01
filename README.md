@@ -11,7 +11,7 @@
 
 ## Requirements
 
-Version `0.0.10` of this React Native component requires the version `0.9.22` or higher of the iOS libbambuser SDK.
+Version `0.0.10` and above of this React Native component requires the version `0.9.22` or higher of the iOS libbambuser SDK.
 
 ## Installation
 
