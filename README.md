@@ -78,10 +78,10 @@ import RNBambuserPlayer from 'react-native-bambuser-player';
 ### Props
 ```javascript
 applicationId: String
-// This applicationId should be fetched from your backend, rather than being hardcoded within your Reacty Native app. Read more here https://bambuser.com/docs/key-concepts/application-id/
+// This applicationId should be fetched from your backend, rather than being hardcoded within your React Native app. Read more here https://bambuser.com/docs/key-concepts/application-id/
 
 resourceUri: String
-// The uri to the resource you want this player to play. Read more here https://bambuser.com/docs/key-concepts/resource-uri/. In order to play a new resourceUri after the component have been mounted the function .stop() have to be called on this player object.
+// The uri to the resource you want this player to play. Read more here https://bambuser.com/docs/key-concepts/resource-uri/. In order to play a new resourceUri after the component has been mounted the function .stop() has to be called on this player object.
 
 timeShiftMode: Boolean
 // Enable this if you want be able to seek in a live broadcast.
@@ -136,10 +136,10 @@ By storing a reference to the RNBambuserPlayer you can call its functions.
 ref={ref => {this.myPlayerRef = ref; }} applicationId={yourApplicationId} />
 ```
 
-The available functions for RNBambuserBroadcaster can be called are:
+The available functions for RNBambuserPlayer which can be called are:
 ```javascript
 this.myPlayerRef.play();
-// Call this to play the latest resourceUri video. If you want to play a new resourceUri on this same player instance this.myPlayerRef.stop() have to be called first.
+// Call this to play the latest resourceUri video. If you want to play a new resourceUri on this same player instance this.myPlayerRef.stop() has to be called first.
 
 this.myPlayerRef.pause();
 // Call this to pause the video.
