@@ -146,7 +146,7 @@ class RNBambuserPlayer extends React.Component {
         }}
         {...this.props}
         onReady={this._onReady}
-        onCurrentViewerCountUpdate={this._onCurrentViewersUpdated}
+        onCurrentViewerCountUpdate={this._onCurrentViewerCountUpdate}
         onTotalViewerCountUpdate={this._onTotalViewerCountUpdate}
         onProgressUpdate={this._onProgressUpdate}
         onLoading={this._onLoading}
