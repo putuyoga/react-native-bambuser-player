@@ -30,7 +30,7 @@ android {
 repositories {
         google()
         jcenter()
-        mavencentral()
+        mavenCentral()
         maven { 
             url 'https://jitpack.io' 
         }
