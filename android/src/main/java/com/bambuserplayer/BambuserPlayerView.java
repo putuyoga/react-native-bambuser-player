@@ -49,7 +49,7 @@ public class BambuserPlayerView extends RelativeLayout {
         setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
         mWrapperLayout = new RelativeLayout(getContext());
         mWrapperLayout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
-        mWrapperLayout.setBackgroundColor(Color.parseColor("#000000"));
+        mWrapperLayout.setBackgroundColor(Color.parseColor("#00000000"));
         addView(mWrapperLayout);
         mVideoSurfaceView = new SurfaceViewWithAutoAR(getContext());
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
